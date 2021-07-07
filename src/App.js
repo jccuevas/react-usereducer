@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react';
 import './App.css';
 import NavigatorBar from './components/NavigatorBar/NavigatorBar';
+import Main from './components/Main/Main';
 
 
 function App() {
@@ -16,13 +17,7 @@ function App() {
     <div className="App">
       <header><h1>Ejemplo de useReducer y useRef</h1></header>
       <NavigatorBar/>
-      <p>Con useRef se mantiene una referencia al elemento &lt;input&gt; para acceder a él, por ejemplo a su valor: inputUser.current.value</p>
-      <label htmlFor="user">Usuario:</label>
-      <input ref={inputUser} type="text" onChange={()=>handleChange(inputUser.current.value)}/>
-      <button>
-        Login
-      </button>
-      <p>Ha escrito:<i>{user}</i></p>
+      <Main />
     </div>
   );
 }

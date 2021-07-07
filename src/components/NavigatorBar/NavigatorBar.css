@@ -1,15 +1,34 @@
-div.navigator{
+div.navigator-div{
     padding: 0px;
+    width: 100%;
+    background-color: lightgray;
+    overflow: auto;
+    display: flex;
+}
+div.reset::after{
+    clear: both;
 }
 
 
-li{
+li.navigator-li{
     list-style: none;
-    float: left;
+  display: inline-block;
     margin-left: 10px;
 }
 
-a{
+a.navigator-a{
+    color: black;
     padding: 5px;
     text-decoration: none;
+}
+
+a.navigator-a:hover{
+    background-color: darkgrey;
+    color: white;
+}
+
+ul{
+    padding: 0px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
 }
